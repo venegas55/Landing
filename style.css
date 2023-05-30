@@ -4,22 +4,37 @@
 
 /* Pre-sets for debugging */
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    font-family: 'Roboto', sans-serif;
 }
-/* Body pre-sets */
-/* body {
-    padding: 0px 50px 0px 50px;
-} */
 
+body {
+    margin: 0px;
+}
+
+.section {
+    padding: 0 50px 50px 50px;
+    
+
+}
+
+.signup {
+    background-color: #3b82f6;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+
+/* --------------------ALL HEADER-------------------- */
 /* Header Styling */
 
 .header-container {
-    font-family: 'Roboto', sans-serif;
-    padding: 0 50px 0 50px;
     background-color: #1f2937;
     display: flex;
     flex-direction: column;
-
 }
 
 /* Nav-bar elements */
@@ -38,7 +53,7 @@
     font-weight: light;
 }
 
-.Title {
+.title-header {
     color: #f9faf8;
     font-size: 48px;
 
@@ -48,12 +63,23 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
+    padding:  10px 0px 0px 0px;
+    flex: 1;
+    margin-bottom: 75px;
 }
 
 ul.links {
     display: flex;
     margin: 0px;
+    list-style: none;
+    gap: 20px;
+    padding: 0px;
+}
 
+/* >>>>> I have redundancy as link on footer automatically went white without decoration <<<<< */
+.links > li, a {
+    color: #e5e7eb;
+    text-decoration: none;
 }
 
 /* Header-content elements */
@@ -61,10 +87,12 @@ ul.links {
 
 .header-content {
     display: flex;
+    flex: 1;
 }
 
 .h-image > img {
     max-height: 200px;
+    border-radius: 100%;
 }
 
 .h-image {
@@ -77,7 +105,7 @@ ul.links {
 .h-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 2;
     min-height: 300px;
     justify-content: center;
     gap: 5px;
@@ -91,10 +119,127 @@ ul.links {
     margin: 0px;
 }
 
-.signup {
+/* --------------------all info (section2)-------------------- */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.title-info {
+    margin-top: 25px;
+    font-weight: 800;
+    font-size: 36px;
+    color: #1f2937;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+}
+
+.i-image {
+    border: 4px solid #3b82f6;
+    width: 125px;
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.i-desc > p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    color: #8e959d;
+}
+
+/* --------------------ALL QUOTE-------------------- */
+
+/* TODO: fix all boxes because it just works with a fixed height... 🤔 or maybe that's the way of solving it?? */
+
+
+/* Try to fix container space with 'height' property */
+.container-quote {
+    background-color: #E5E7EB;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote {
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0px;
+    padding: 50px 25px 15px 25px;
+}
+
+.signature {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: right;
+    margin: 0;
+}
+
+/* --------------------ALL last-section-------------------- */
+
+/* Try to fix container space with 'height' property */
+.container-last.section {
+    padding: 50px 90px 50px 90px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-banner {
     background-color: #3b82f6;
-    color: #fff;
-    width: 100px;
-    height: 30px;
     border-radius: 10px;
+    display: flex;
+    padding:25px 50px 25px 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-banner > p {
+    margin: 0px;
+    color: #FFF;
+}
+
+.text-banner > .title {
+    font-size: 20px;
+    font-weight: 600;
+    /* margin-bottom: 3px; */
+}
+
+.text-banner > .text {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+/* --------------------ALL Footer-------------------- */
+
+.footer {
+    background-color: #1f2937;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > p {
+    color: #FFFFFF;
+    text-align: center;
 }
